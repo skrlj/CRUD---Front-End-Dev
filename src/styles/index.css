@@ -326,6 +326,7 @@ figure,
 fieldset,
 legend,
 textarea,
+address,
 pre,
 iframe,
 hr,
@@ -495,21 +496,18 @@ table th {
 }
 
 .developers {
-  display: grid;
-  grid-template-columns: 360px 1fr;
   width: 100%;
   min-height: 100vh;
 }
 
 .developer-filters {
-  position: relative;
-  width: 360px;
-  height: 100vh;
+  display: none;
 }
 
 .developer-results {
-  background-color: var(--gray-1);
-  height: 100vh;
+  background-color: var(--gray-2);
+  width: 100%;
+  min-height: 100vh;
 }
 
 .developer-filters {
@@ -526,6 +524,98 @@ table th {
 }
 .developer-results h2 {
   font-size: var(--font-size-4);
+}
+
+.developer-results header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.developer-results h2 {
+  font-size: var(--font-size-6);
+  text-align: center;
+}
+
+.developer-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+.developer {
+  max-width: 400px;
+  background-color: rgb(255, 255, 255);
+  padding: 4rem 6rem;
+  box-shadow: var(--shadow-4);
+}
+
+.developer header {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.developer header h2 {
+  text-align: center;
+  font-size: var(--font-size-4);
+  letter-spacing: -1px;
+  font-weight: var(--font-weight-5);
+}
+.developer header p {
+  font-size: var(--font-size-1);
+  font-weight: var(--font-weight-3);
+  color: var(--gray-7);
+}
+
+.avatar {
+  text-align: center;
+  max-height: 124px;
+}
+.avatar img {
+  background-color: red;
+  aspect-ratio: 1/1;
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  padding-top: 1rem;
+  border: 4px solid rgb(255, 255, 255);
+  background-color: var(--pink-2);
+  box-shadow: 0 0 0px 2px var(--pink-9);
+}
+
+.full-stack img {
+  background-color: var(--green-2);
+  box-shadow: 0 0 0px 2px var(--green-9);
+}
+
+.back-end img {
+  background-color: var(--blue-2);
+  box-shadow: 0 0 0px 2px var(--blue-9);
+}
+
+.front-end img {
+  background-color: var(--red-2);
+  box-shadow: 0 0 0px 2px var(--red-9);
+}
+
+.developer-details {
+  width: min-content;
+  margin: 0 auto;
+  color: var(--gray-7);
+  font-size: var(--font-size-1);
+}
+
+.phone-number, .email {
+  display: flex;
+  gap: 0.25rem;
+  font-size: var(--font-size-0);
+  margin-bottom: var(--size-2);
+  width: exact-fit;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=index.css.map */

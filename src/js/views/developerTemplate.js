@@ -1,11 +1,25 @@
 // Template Literal - Developer Card...(Readme)
 // Developer template is an object props
 
+function developerType(type) {
+  if(type === "full stack developer") {
+    return "full-stack"
+  }
+
+  if(type === "front end developer") {
+    return "front-end"
+  }
+
+  if(type === "back end developer") {
+    return "back-end"
+  }
+}
+
 function developerTemplate({type, firstName, lastName, avatar, ...props}){
     return  `
     <li class="developer">
     <aside >
-       <div class="avatar ${type}">
+       <div class="avatar ${developerType(type)}">
         <img
         src="${avatar}"
         width="104"
